@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+        <!--FUENTE-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter+Tight:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1>
+                    <img id="logoPagina" src="img/cielo y sol logo png.png" alt="logo oficial de la pagina">
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="menu-item">Inicio</a></li>
+                        <li><a href="productos.html" class="menu-item">Productos</a></li>
+                        <li><a href="https://www.canva.com/design/DAFnHla6XB0/UPm6_bDSUh4vtzPhh42Raw/view?utm_content=DAFnHla6XB0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="menu-item">Catalogo</a></li>
+                        <li><a href="contacto.html" class="menu-item">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input type="text" id="nombreApellido" class="input_padron" required>
+
+                <label for="correoElectronico">Correo Electronico</label>
+                <input type="email" id="correoElectronico" class="input_padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input_padron"required placeholder="xxx-xxx-xxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input_padron" required></textarea>
+
+                <fieldset>
+                    <legend >¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radioEmail"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radioTelefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                    
+                    <label for="radioWhatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Seleccione en que horario prefiere ser atendido</legend>
+                    <select id="horario">
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noche">Noche</option>
+                    </select>
+
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de nuestros productos?</label>
+
+                <input class="enviar" type="submit" value="Enviar Formulario">
+            </form>
+
+            <table>
+                <thead>
+                    <tr><!--filas-->
+                        <th> Día </th><!--celdas-->
+                        <th> Horario </th><!--celdas-->
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td> Lunes a Viernes </td>
+                        <td> 11AM - 6PM </td>
+                    </tr>
+
+                    <tr>
+                        <td> Sabados </td>
+                        <td> 11AM - 4PM </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </main>
+        <footer>
+            <img id="logoFooter" src="img/CYS.png" alt="">
+            <p class="copyright">&copy Copyright Cielo y Sol Accesorios-2024</p>
+        </footer>
+     <script src="script.js"> </script>
+    </body>
+</html>
